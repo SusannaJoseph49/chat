@@ -1,14 +1,20 @@
-html,body{
-    height: 100%;
-}
-body{
+#chatbot-widget {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 1000;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#chatbot-widget body {
     background-color: rgb(196, 218, 237);
     transition: 1s all ease-in-out;
 }
-#init{
-    margin-top: 80vh;
-    margin-left: 75vw;
+
+#chatbot-widget #init {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
     background: rgb(221, 85, 85);
     border: none;
     padding: 10px 20px;
@@ -18,18 +24,20 @@ body{
     color: aliceblue;
     cursor: pointer;
 }
-.desc p{
-    color: rgb(133,153,168);
+#chatbot-widget .desc p {
+    color: rgb(133, 153, 168);
     margin: 0;
     font-weight: 600;
 }
-.text{
+
+#chatbot-widget .text {
     font-size: 65px;
     font-weight: 800;
     color: cadetblue;
     margin: 0;
 }
-.parent{
+
+#chatbot-widget .parent {
     position: relative;
     height: 100%;
     padding: 0 7rem;
@@ -37,11 +45,13 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.bot-img{
+
+#chatbot-widget .bot-img {
     width: 20rem;
     height: 20rem;
 }
-.child{
+
+#chatbot-widget .child {
     box-shadow: 0 0 2px salmon;
     border-radius: 15px;
     height: 30rem;
@@ -49,15 +59,17 @@ body{
     margin: auto;
     background: white;
 }
-.header img{
+
+#chatbot-widget .header img {
     width: 35px;
     height: 35px;
     border-radius: 50%;
     margin: 0 0.5rem;
-    border: 1px solid rgb(231,231,231);
+    border: 1px solid rgb(231, 231, 231);
     padding: 5px;
 }
-.header{
+
+#chatbot-widget .header {
     position: absolute;
     top: 0;
     display: flex;
@@ -69,22 +81,26 @@ body{
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     z-index: 1;
-    box-shadow: 0 0 2px rgb(175,175,175);
+    box-shadow: 0 0 2px rgb(175, 175, 175);
 }
-.h-child{
+
+#chatbot-widget .h-child {
     margin-left: 20px;
     display: flex;
     align-items: center;
 }
-.header span{
+
+#chatbot-widget .header span {
     font-size: 13px;
     margin: 0;
     padding: 0;
 }
-.name{
+
+#chatbot-widget .name {
     font-weight: 600;
 }
-.footer{
+
+#chatbot-widget .footer {
     position: absolute;
     bottom: 0;
     width: 16rem;
@@ -95,21 +111,22 @@ body{
     padding: 15px 0;
     text-align: center;
     font-size: 14px;
-    box-shadow: 0 0 3px rgb(153,153,153);
+    box-shadow: 0 0 3px rgb(153, 153, 153);
 }
-#chat-box{
+
+#chatbot-widget #chat-box {
     position: relative;
     top: 40px;
     padding: 8px 10px;
     font-size: 12px;
     height: 24.2rem;
     overflow: auto;
-    background: rgb(224,241,253);
+    background: rgb(224, 241, 253);
     text-align: center;
 }
 
 /* these classes will be used in javascript file */
-.msg{
+#chatbot-widget .msg {
     background: white;
     padding: 5px 15px;
     border-top-right-radius: 15px;
@@ -118,25 +135,28 @@ body{
     width: max-content;
     font-size: 14px;
     color: lightslategrey;
-    box-shadow: 0 0 5px rgb(226,226,226);
+    box-shadow: 0 0 5px rgb(226, 226, 226);
     max-width: 65%;
     text-align: left;
 }
-.test{
+
+#chatbot-widget .test {
     text-align: right;
     margin: 20px 0;
 }
-.rep{
-    background: rgb(253,243,224);
+
+#chatbot-widget .rep {
+    background: rgb(253, 243, 224);
     color: lightslategray;
     padding: 5px 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
     font-size: 14px;
-    box-shadow: 0 0 5px rgb(211,211,211);
+    box-shadow: 0 0 5px rgb(211, 211, 211);
 }
-.opt{
+
+#chatbot-widget .opt {
     padding: 5px 20px;
     columns: lightsalmon;
     border: 1px solid blueviolet;
